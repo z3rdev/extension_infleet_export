@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Infleet Exportador</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="header">
+        <div>
+          <h1>Ocorrências Infleet</h1>
+          <p id="pageStatus">Verificando página...</p>
+        </div>
+        <button id="refreshButton" class="iconButton" title="Atualizar leitura da tela" type="button">↻</button>
+      </header>
+
+      <section class="panel">
+        <label class="field">
+          <span>Filtro de data na tela</span>
+          <output id="rangeText">-</output>
+        </label>
+
+        <div class="dateGrid">
+          <label class="field">
+            <span>Data inicial</span>
+            <input id="startDate" type="date">
+          </label>
+          <label class="field">
+            <span>Data final</span>
+            <input id="endDate" type="date">
+          </label>
+        </div>
+
+        <div class="buttonRow">
+          <button id="applyDateButton" class="secondaryButton" type="button">Aplicar período</button>
+          <button id="exportButton" class="primaryButton" type="button">Exportar Excel</button>
+        </div>
+
+        <label class="checkRow">
+          <input id="scrollAll" type="checkbox" checked>
+          <span>Rolar a lista inteira antes de exportar</span>
+        </label>
+      </section>
+
+      <section class="summary">
+        <div>
+          <span>Linhas visíveis</span>
+          <strong id="visibleRows">0</strong>
+        </div>
+        <div>
+          <span>Aba visualizada</span>
+          <strong id="statusText">-</strong>
+        </div>
+      </section>
+
+      <p id="message" class="message" role="status"></p>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

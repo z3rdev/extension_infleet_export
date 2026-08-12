@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Infleet Ocorrencias Exportador",
+  "description": "Exporta ocorrencias da tela do Infleet para um arquivo Excel.",
+  "version": "1.0.0",
+  "action": {
+    "default_title": "Exportar ocorrencias Infleet",
+    "default_popup": "src/popup.html"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://app.infleet.com.br/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://app.infleet.com.br/*"
+      ],
+      "js": [
+        "src/xlsx.js",
+        "src/content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
