@@ -7,7 +7,7 @@ Extensão local para exportar a lista de ocorrências em `https://app.infleet.co
 1. Abra `chrome://extensions` ou `edge://extensions`.
 2. Ative o modo de desenvolvedor.
 3. Clique em `Carregar sem compactação`.
-4. Selecione esta pasta: `E:\PROJETOS\EXTENSÃO - INFLEET EXTRAÇÃO DE OCORRENCIA`.
+4. Selecione esta pasta: `Raiz`.
 5. Abra o Infleet, faca login manualmente e acesse `https://app.infleet.com.br/occurrences`.
 6. Recarregue a pagina depois de instalar a extensão.
 
